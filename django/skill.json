@@ -1,0 +1,81 @@
+{
+  "name": "django",
+  "version": "1.0.0",
+  "description": "Django/DRF 开发最佳实践技能包。涵盖模型设计、DRF API 开发、ORM 优化、安全、Admin 配置、导入导出、测试、部署、代码生成等核心技能。",
+  "author": "CC-Atlas",
+  "license": "MIT",
+  "tags": [
+    "django",
+    "drf",
+    "python",
+    "backend",
+    "rest-framework",
+    "api",
+    "orm",
+    "database"
+  ],
+  "keywords": [
+    "Django",
+    "Django REST Framework",
+    "DRF",
+    "Python",
+    "Backend",
+    "API Development",
+    "ORM",
+    "Database Design",
+    "Security",
+    "Testing",
+    "Deployment"
+  ],
+  "features": [
+    "模型设计规范与最佳实践",
+    "DRF API 开发标准流程",
+    "ORM 查询优化与性能调优",
+    "安全最佳实践（认证、权限、OWASP）",
+    "Django Admin 定制与优化",
+    "数据导入导出方案",
+    "测试策略与工具集成",
+    "生产环境部署指南",
+    "代码生成与自动化工具",
+    "质量检查清单"
+  ],
+  "modules": {
+    "model-design.md": "数据模型设计规范",
+    "drf-api.md": "Django REST Framework API 开发",
+    "orm-optimization.md": "ORM 查询优化",
+    "security.md": "安全最佳实践",
+    "admin-config.md": "Django Admin 配置",
+    "import-export.md": "数据导入导出",
+    "testing.md": "测试策略",
+    "deployment.md": "部署指南",
+    "code-generation.md": "代码生成工具",
+    "constraints.md": "开发约束规范",
+    "checklist.md": "质量检查清单"
+  },
+  "examples": {
+    "viewset-example.py": "DRF ViewSet 标准示例",
+    "serializer-example.py": "DRF Serializer 标准示例",
+    "filters-example.py": "DRF FilterSet 标准示例"
+  },
+  "scripts": {
+    "create-app.sh": "Django App 创建辅助脚本"
+  },
+  "workflows": {
+    "new-feature.md": "新功能开发工作流"
+  },
+  "requirements": {
+    "python": ">=3.10",
+    "django": ">=5.0",
+    "djangorestframework": ">=3.14",
+    "django-filter": ">=23.0"
+  },
+  "usage": {
+    "description": "Django/DRF 项目开发、优化、部署的完整指南",
+    "trigger": "/django",
+    "auto_trigger": "当检测到 Django 相关任务时自动触发"
+  },
+  "repository": "https://github.com/your-org/CC-Atlas-Skills",
+  "homepage": "https://github.com/your-org/CC-Atlas-Skills/tree/main/django",
+  "created": "2026-01-11",
+  "updated": "2026-01-11"
+}
