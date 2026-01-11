@@ -1,23 +1,20 @@
 {
   "name": "cc-atlas-skills",
   "owner": {
-    "name": "CC-Atlas"
+    "name": "CC-Atlas",
+    "email": "atlas@example.com"
+  },
+  "metadata": {
+    "description": "Claude Code Skills 集合仓库",
+    "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "django",
-      "version": "1.0.0",
       "description": "Django/DRF 开发最佳实践。涵盖模型设计、API 开发、ORM 优化、安全、测试、部署等核心技能。",
-      "tags": [
-        "django",
-        "drf",
-        "python",
-        "backend"
-      ],
-      "source": {
-        "type": "directory",
-        "path": "django"
-      }
+      "source": "./",
+      "strict": false,
+      "skills": ["./django"]
     }
   ]
 }
