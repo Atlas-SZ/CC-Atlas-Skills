@@ -13,8 +13,8 @@ Claude Code Skills 集合仓库。
 推送到 GitHub 后，用户可以：
 
 ```bash
-# 1. 添加 marketplace（替换为你的 GitHub 用户名）
-claude plugin marketplace add your-username/CC-Atlas-Skills
+# 1. 添加 marketplace
+claude plugin marketplace add Atlas-SZ/CC-Atlas-Skills
 
 # 2. 安装 django skill
 claude plugin install django@cc-atlas-skills
@@ -27,7 +27,7 @@ claude plugin list
 
 ```bash
 # 克隆仓库
-git clone https://github.com/your-username/CC-Atlas-Skills.git
+git clone https://github.com/Atlas-SZ/CC-Atlas-Skills.git
 cd CC-Atlas-Skills
 
 # 安装单个 skill
@@ -226,7 +226,7 @@ git add .
 git commit -m "Initial commit"
 
 # 关联远程仓库
-git remote add origin https://github.com/your-username/CC-Atlas-Skills.git
+git remote add origin https://github.com/Atlas-SZ/CC-Atlas-Skills.git
 git push -u origin main
 ```
 
@@ -236,13 +236,13 @@ git push -u origin main
 
 ```bash
 # GitHub 短链接（推荐）
-claude plugin marketplace add your-username/CC-Atlas-Skills
+claude plugin marketplace add Atlas-SZ/CC-Atlas-Skills
 
 # 完整 HTTPS URL
-claude plugin marketplace add https://github.com/your-username/CC-Atlas-Skills
+claude plugin marketplace add https://github.com/Atlas-SZ/CC-Atlas-Skills
 
 # SSH URL
-claude plugin marketplace add git@github.com:your-username/CC-Atlas-Skills.git
+claude plugin marketplace add git@github.com:Atlas-SZ/CC-Atlas-Skills.git
 ```
 
 然后安装 skill：
@@ -270,9 +270,5 @@ MIT License
 
 ## 链接
 
-- GitHub: https://github.com/your-username/CC-Atlas-Skills
-- 问题反馈: https://github.com/your-username/CC-Atlas-Skills/issues
-
----
-
-**注意**：将 README 中的 `your-username` 替换为你的 GitHub 用户名后再推送到 GitHub。
+- GitHub: https://github.com/Atlas-SZ/CC-Atlas-Skills
+- 问题反馈: https://github.com/Atlas-SZ/CC-Atlas-Skills/issues
