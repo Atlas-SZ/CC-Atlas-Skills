@@ -11,6 +11,17 @@ Claude Code 高级技能集合（Skills Collection），提供标准化的开发
 | **[Obsidian Canvas](./obsidian-canvas-creator/README.md)** | Obsidian Canvas 布局生成器。支持生成思维导图 (MindMap) 和自由布局 (Freeform) 的 `.canvas` 文件。 | `/obsidian-canvas-creator` |
 | **[Excalidraw Diagram](./excalidraw-diagram/README.md)** | Excalidraw 风格图表生成器。将文本逻辑转换为手绘风格的流程图、架构图与思维导图。 | `/excalidraw-diagram` |
 
+## 🎨 效果展示
+
+### Mermaid Visualizer
+![Mermaid 演示](./assets/mermaid-demo.png)
+
+### Obsidian Canvas Creator
+![Canvas 演示](./assets/canvas-demo.png)
+
+### Excalidraw Diagram
+![Excalidraw 演示](./assets/excalidraw-demo.png)
+
 ## 🚀 安装指南
 
 ### 方式 1：通过 Marketplace 安装（推荐）
