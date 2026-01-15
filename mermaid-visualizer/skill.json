@@ -1,0 +1,48 @@
+{
+  "name": "mermaid-visualizer",
+  "version": "1.0.0",
+  "description": "将文本内容转换为专业的 Mermaid 图表。支持流程图、时序图、状态图、思维导图等多种 Mermaid 图表类型。",
+  "author": "CC-Atlas",
+  "license": "MIT",
+  "tags": [
+    "mermaid",
+    "diagram",
+    "visualization",
+    "flowchart",
+    "sequence-diagram",
+    "state-diagram"
+  ],
+  "keywords": [
+    "Mermaid",
+    "Diagram",
+    "Visualization",
+    "Flowchart",
+    "Sequence Diagram",
+    "State Diagram",
+    "Mind Map",
+    "Documentation"
+  ],
+  "features": [
+    "支持多种 Mermaid 图表类型（Process Flow, Circular Flow, Comparison, Mindmap 等）",
+    "内置语法错误预防机制",
+    "适配 Obsidian 和 GitHub 渲染环境",
+    "支持多种配色风格（Minimal, Professional, Colorful）",
+    "智能选择最佳可视化方案"
+  ],
+  "modules": {
+    "SKILL.md": "主技能入口与工作流程",
+    "references/syntax-rules.md": "Mermaid 语法规则与边界情况"
+  },
+  "requirements": {
+    "mermaid": ">=10.0.0"
+  },
+  "usage": {
+    "description": "生成 Mermaid 图表代码，用于文档或演示",
+    "trigger": "/mermaid-visualizer",
+    "auto_trigger": "当用户请求创建 Mermaid 图表、流程图、可视化内容时自动触发"
+  },
+  "repository": "https://github.com/Atlas-SZ/CC-Atlas-Skills",
+  "homepage": "https://github.com/Atlas-SZ/CC-Atlas-Skills/tree/main/mermaid-visualizer",
+  "created": "2026-01-11",
+  "updated": "2026-01-15"
+}

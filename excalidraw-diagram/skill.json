@@ -1,0 +1,49 @@
+{
+  "name": "excalidraw-diagram",
+  "version": "1.1.0",
+  "description": "从文本内容生成 Excalidraw 图表（Obsidian 格式）。支持流程图、思维导图、层级图、关系图等多种图表类型。",
+  "author": "CC-Atlas",
+  "license": "MIT",
+  "tags": [
+    "excalidraw",
+    "diagram",
+    "visualization",
+    "obsidian",
+    "flowchart",
+    "mindmap"
+  ],
+  "keywords": [
+    "Excalidraw",
+    "Diagram",
+    "Flowchart",
+    "Mind Map",
+    "Visualization",
+    "Obsidian",
+    "Drawing",
+    "Graph"
+  ],
+  "features": [
+    "支持多种图表类型（流程图、思维导图、层级图、关系图等）",
+    "自动生成 Obsidian 兼容的 .md 文件",
+    "智能布局算法确保图表清晰易读",
+    "支持中英文内容",
+    "自动保存到工作目录"
+  ],
+  "modules": {
+    "SKILL.md": "主技能入口与工作流程",
+    "references/excalidraw-schema.md": "Excalidraw JSON 格式规范"
+  },
+  "requirements": {
+    "obsidian": ">=1.0.0",
+    "excalidraw-obsidian-plugin": ">=2.0.0"
+  },
+  "usage": {
+    "description": "从文本内容生成 Excalidraw 图表，输出 Obsidian 兼容格式",
+    "trigger": "/excalidraw-diagram",
+    "auto_trigger": "当用户请求创建 Excalidraw 图表、流程图、思维导图时自动触发"
+  },
+  "repository": "https://github.com/Atlas-SZ/CC-Atlas-Skills",
+  "homepage": "https://github.com/Atlas-SZ/CC-Atlas-Skills/tree/main/excalidraw-diagram",
+  "created": "2026-01-11",
+  "updated": "2026-01-15"
+}

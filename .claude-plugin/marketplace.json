@@ -15,6 +15,27 @@
       "source": "./",
       "strict": false,
       "skills": ["./django"]
+    },
+    {
+      "name": "excalidraw-diagram",
+      "description": "从文本内容生成 Excalidraw 图表（Obsidian 格式）。支持流程图、思维导图、层级图、关系图等多种图表类型。",
+      "source": "./",
+      "strict": false,
+      "skills": ["./excalidraw-diagram"]
+    },
+    {
+      "name": "mermaid-visualizer",
+      "description": "将文本内容转换为专业的 Mermaid 图表。支持流程图、时序图、状态图、思维导图等多种 Mermaid 图表类型。",
+      "source": "./",
+      "strict": false,
+      "skills": ["./mermaid-visualizer"]
+    },
+    {
+      "name": "obsidian-canvas-creator",
+      "description": "从文本内容创建 Obsidian Canvas 文件。支持 MindMap（放射状思维导图）和 Freeform（自由布局）两种布局模式。",
+      "source": "./",
+      "strict": false,
+      "skills": ["./obsidian-canvas-creator"]
     }
   ]
 }

@@ -1,0 +1,52 @@
+{
+  "name": "obsidian-canvas-creator",
+  "version": "1.0.0",
+  "description": "从文本内容创建 Obsidian Canvas 文件。支持 MindMap（放射状思维导图）和 Freeform（自由布局）两种布局模式。",
+  "author": "CC-Atlas",
+  "license": "MIT",
+  "tags": [
+    "obsidian",
+    "canvas",
+    "mindmap",
+    "visualization",
+    "diagram",
+    "notes"
+  ],
+  "keywords": [
+    "Obsidian Canvas",
+    "Mind Map",
+    "Canvas",
+    "Visualization",
+    "Note Organization",
+    "Spatial Layout",
+    "Interactive Diagram"
+  ],
+  "features": [
+    "支持 MindMap 和 Freeform 两种布局模式",
+    "智能布局算法自动计算节点位置",
+    "支持节点连接关系可视化",
+    "自动生成 .canvas 格式文件",
+    "完整的 JSON Canvas 规范支持"
+  ],
+  "modules": {
+    "SKILL.md": "主技能入口与工作流程",
+    "references/canvas-spec.md": "JSON Canvas 格式完整规范",
+    "references/layout-algorithms.md": "布局定位算法详解"
+  },
+  "assets": {
+    "description": "内部资源目录"
+  },
+  "requirements": {
+    "obsidian": ">=1.0.0",
+    "canvas-obsidian": ">=1.0.0"
+  },
+  "usage": {
+    "description": "从文本内容创建交互式 Obsidian Canvas 画布",
+    "trigger": "/obsidian-canvas-creator",
+    "auto_trigger": "当用户请求创建 Canvas、思维导图、空间布局时自动触发"
+  },
+  "repository": "https://github.com/Atlas-SZ/CC-Atlas-Skills",
+  "homepage": "https://github.com/Atlas-SZ/CC-Atlas-Skills/tree/main/obsidian-canvas-creator",
+  "created": "2026-01-11",
+  "updated": "2026-01-15"
+}
