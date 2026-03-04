@@ -10,6 +10,8 @@ Claude Code 高级技能集合（Skills Collection），提供标准化的开发
 | **[Mermaid Visualizer](./mermaid-visualizer/README.md)** | 专业的 Mermaid 图表生成器。支持流程图、时序图、类图、状态图等，自动修正语法错误。 | `/mermaid-visualizer` |
 | **[Obsidian Canvas](./obsidian-canvas-creator/README.md)** | Obsidian Canvas 布局生成器。支持生成思维导图 (MindMap) 和自由布局 (Freeform) 的 `.canvas` 文件。 | `/obsidian-canvas-creator` |
 | **[Excalidraw Diagram](./excalidraw-diagram/README.md)** | Excalidraw 风格图表生成器。将文本逻辑转换为手绘风格的流程图、架构图与思维导图。 | `/excalidraw-diagram` |
+| **[Baidu Search](./baidu-search/README.md)** | 百度 AI 搜索工具。集成千帆 AI Search API，支持中文互联网搜索、站点过滤、时效过滤。 | `/baidu-search` |
+| **[Baidu PPT](./baidu-ppt/README.md)** | 百度智能 PPT 生成工具。基于大纲自动生成专业演示文稿，支持多种风格模板。 | `/baidu-ppt` |
 
 ## 🎨 效果展示
 
@@ -35,6 +37,7 @@ claude plugin marketplace add Atlas-SZ/CC-Atlas-Skills
 # 2. 安装所需技能
 claude plugin install django@cc-atlas-skills
 claude plugin install mermaid-visualizer@cc-atlas-skills
+claude plugin install baidu-search@cc-atlas-skills
 ```
 
 ### 方式 2：本地手动安装
@@ -75,7 +78,8 @@ CC-Atlas-Skills/
 ├── django/                # Django 开发技能包
 ├── mermaid-visualizer/    # Mermaid 图表生成
 ├── obsidian-canvas-creator/ # Obsidian Canvas 生成
-└── excalidraw-diagram/    # Excalidraw 生成
+├── excalidraw-diagram/    # Excalidraw 生成
+└── baidu-search/          # 百度 AI 搜索
 ```
 
 ## 🤝 贡献

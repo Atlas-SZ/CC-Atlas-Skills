@@ -36,6 +36,20 @@
       "source": "./",
       "strict": false,
       "skills": ["./obsidian-canvas-creator"]
+    },
+    {
+      "name": "baidu-search",
+      "description": "百度 AI 搜索工具，集成百度智能云千帆 AI Search API。用于搜索中文互联网实时信息，支持网页/视频/图片搜索、站点过滤、时效过滤等功能。",
+      "source": "./",
+      "strict": false,
+      "skills": ["./baidu-search"]
+    },
+    {
+      "name": "baidu-ppt",
+      "description": "百度智能 PPT 生成工具，集成百度智能云千帆 AI PPT API。基于大纲自动生成专业演示文稿，支持多种风格模板选择。",
+      "source": "./",
+      "strict": false,
+      "skills": ["./baidu-ppt"]
     }
   ]
 }
