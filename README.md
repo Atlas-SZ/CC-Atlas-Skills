@@ -56,6 +56,25 @@ ln -sf "$(pwd)/django" ~/.claude/skills/django
 ls -l ~/.claude/skills/django
 ```
 
+## ⚙️ 环境配置
+
+### 百度智能云 API Key
+
+使用 `baidu-search` 和 `baidu-ppt` 技能需要配置百度智能云千帆 API Key：
+
+```bash
+# 在 ~/.zshrc 或 ~/.bashrc 中添加
+export BAIDU_API_KEY="your-api-key-here"
+
+# 使配置生效
+source ~/.zshrc  # 或 source ~/.bashrc
+```
+
+**获取 API Key：**
+1. 访问 [百度智能云千帆平台](https://console.bce.baidu.com/qianfan/)
+2. 创建应用并获取 API Key
+3. 同一 API Key 可用于所有百度系技能
+
 ## 💡 使用方法
 
 在 Claude Code 会话中，你可以通过以下方式使用技能：
