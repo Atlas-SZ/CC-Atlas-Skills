@@ -79,7 +79,8 @@ CC-Atlas-Skills/
 ├── mermaid-visualizer/    # Mermaid 图表生成
 ├── obsidian-canvas-creator/ # Obsidian Canvas 生成
 ├── excalidraw-diagram/    # Excalidraw 生成
-└── baidu-search/          # 百度 AI 搜索
+├── baidu-search/          # 百度 AI 搜索
+└── baidu-ppt/             # 百度智能 PPT 生成
 ```
 
 ## 🤝 贡献
