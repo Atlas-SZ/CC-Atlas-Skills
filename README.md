@@ -12,6 +12,7 @@ Claude Code 高级技能集合（Skills Collection），提供标准化的开发
 | **[Excalidraw Diagram](./excalidraw-diagram/README.md)** | Excalidraw 风格图表生成器。将文本逻辑转换为手绘风格的流程图、架构图与思维导图。 | `/excalidraw-diagram` |
 | **[Baidu Search](./baidu-search/README.md)** | 百度 AI 搜索工具。集成千帆 AI Search API，支持中文互联网搜索、站点过滤、时效过滤。 | `/baidu-search` |
 | **[Baidu PPT](./baidu-ppt/README.md)** | 百度智能 PPT 生成工具。基于大纲自动生成专业演示文稿，支持多种风格模板。 | `/baidu-ppt` |
+| **[CodeFlow](./codeflow/README.md)** | 浏览器端代码架构可视化分析工具。零安装、完全离线，分析依赖关系、爆炸半径、安全漏洞，导出 JSON 报告供 Claude 消费。 | `/codeflow` |
 
 ## 🎨 效果展示
 
@@ -38,6 +39,7 @@ claude plugin marketplace add Atlas-SZ/CC-Atlas-Skills
 claude plugin install django@cc-atlas-skills
 claude plugin install mermaid-visualizer@cc-atlas-skills
 claude plugin install baidu-search@cc-atlas-skills
+claude plugin install codeflow@cc-atlas-skills
 ```
 
 ### 方式 2：本地手动安装
@@ -99,7 +101,8 @@ CC-Atlas-Skills/
 ├── obsidian-canvas-creator/ # Obsidian Canvas 生成
 ├── excalidraw-diagram/    # Excalidraw 生成
 ├── baidu-search/          # 百度 AI 搜索
-└── baidu-ppt/             # 百度智能 PPT 生成
+├── baidu-ppt/             # 百度智能 PPT 生成
+└── codeflow/              # 代码架构可视化分析
 ```
 
 ## 🤝 贡献
