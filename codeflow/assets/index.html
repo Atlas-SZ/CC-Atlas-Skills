@@ -2636,7 +2636,18 @@ function App(){
 
     function openLocalFolder(){
         if(!window.showDirectoryPicker){
-            setError('Your browser does not support folder selection. Please use Chrome, Edge, or a Chromium-based browser.');
+            // Fallback: use <input type="file" webkitdirectory>
+            var input=document.createElement('input');
+            input.type='file';
+            input.webkitdirectory=true;
+            input.multiple=true;
+            input.onchange=function(e){
+                var fileList=Array.from(e.target.files);
+                if(fileList.length===0)return;
+                setError(null);setData(null);setSelected(null);setBlastRadius(null);setLoading(true);setProgress('Reading local folder...');
+                processFileList(fileList);
+            };
+            input.click();
             return;
         }
         window.showDirectoryPicker().then(function(dirHandle){
@@ -2648,6 +2659,55 @@ function App(){
                 setError('Failed to open folder: '+(e.message||e));
             }
         });
+    }
+
+    async function processFileList(fileList){
+        var files=[];
+        var SOFT_LIMIT=500,HARD_LIMIT=2000;
+        var fileCount=0;
+        for(var i=0;i<fileList.length&&fileCount<HARD_LIMIT;i++){
+            var f=fileList[i];
+            var name=f.name;
+            var path=f.webkitRelativePath||f.name;
+            if(!Parser.isIncluded(name))continue;
+            var parts=path.split('/');
+            var folder=parts.length>1?parts.slice(0,-1).join('/'):'root';
+            files.push({path:path,name:name,folder:folder,size:f.size,isCode:Parser.isCode(name),file:f});
+            fileCount++;
+        }
+        if(files.length>SOFT_LIMIT&&files.length<=HARD_LIMIT){
+            var proceed=window.confirm('This folder has '+files.length+' files.\n\nProceed?');
+            if(!proceed){setLoading(false);return;}
+        }
+        var max=Math.min(files.length,HARD_LIMIT);
+        var analyzed=[];
+        var allFns=[];
+        async function processFile(idx){
+            if(idx>=max){await finishAnalysis();return;}
+            var f=files[idx];
+            if(idx>0&&idx%50===0)await new Promise(function(r){setTimeout(r,0);});
+            setProgress('Analyzing '+(idx+1)+'/'+max+': '+f.name);
+            try{
+                var content=await f.file.text();
+                var isCodeFile=f.isCode!==false&&Parser.isCode(f.name);
+                if(isCodeFile){
+                    var fns=Parser.extract(content,f.path);
+                    var layer=Parser.detectLayer(f.path);
+                    analyzed.push({path:f.path,name:f.name,folder:f.folder,content:content,functions:fns,lines:content.split('\n').length,layer:layer,churn:0,isCode:true});
+                    fns.forEach(function(fn){allFns.push(Object.assign({},fn,{folder:f.folder,layer:layer}));});
+                }else{
+                    var layer=Parser.detectLayer(f.path);
+                    var lines=content?content.split('\n').length:0;
+                    analyzed.push({path:f.path,name:f.name,folder:f.folder,content:'',functions:[],lines:lines,layer:layer,churn:0,isCode:false});
+                }
+            }catch(e){}
+            processFile(idx+1);
+        }
+        // Expose to global scope for finishAnalysis
+        window._localFiles=files;
+        window._localAnalyzed=analyzed;
+        window._localAllFns=allFns;
+        processFile(0);
     }
 
     async function readLocalFolder(dirHandle, path=''){
